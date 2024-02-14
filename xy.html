@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=+prompt(' Nhập x ')
+    let y=+prompt(' Nhập y ')
+    function xy() {
+
+        if (x==0 && y==0){
+            alert('Điểm nằm ở gốc tọa độ ')
+        }else if (x==0){
+            alert(' Điểm nằm trên trục Y')
+        }else if (y==0){
+            alert(' Điểm nằm trên trục X')
+        }else if(x>0&&y>0){
+            alert('Điểm nằm ở Q1')
+        }else if (x<0&&y>0){
+            alert('Điểm nằm ở Q4')
+        }else if (x<0 && y<0){
+            alert(' Điểm nằm ở Q3')
+        }else if(x>0&&y<0){
+            alert(' Điểm nằm ở Q2')
+        }
+
+    }
+    xy();
+</script>
+</body>
+</html>

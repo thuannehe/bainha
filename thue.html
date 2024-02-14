@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong=+prompt("Nhập lương ")
+        let thue=0
+        if(luong<=200000){
+            thue=0
+        }else if(luong<=300000){
+            thue=(luong-200000)*0.08
+        }else if(luong<=450000){
+            thue=(100000*0.08)+((luong-300000)*0.18)
+        }else if(luong>450000){
+            thue = (1000.00 * 0.08) + (1500.00 * 0.18) + ((luong - 4500.00) * 0.28)
+        }
+    alert("Số tiền đóng: "+thue)
+</script>
+</body>
+</html>
